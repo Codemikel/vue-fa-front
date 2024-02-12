@@ -49,8 +49,8 @@ export default {
         await fetch(`http://localhost:8000/api/propertiesTextureDetails/${this.$route.params.id}/edit`)
           .then(res => res.json())
           .then(data => {
-              console.log(data.data);
-              this.detailsFormData = data.data;
+              console.log(data);
+              this.detailsFormData = data;
         })
 
       } else {

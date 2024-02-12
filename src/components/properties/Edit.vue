@@ -26,8 +26,8 @@ export default {
                 .then(res => res.json())
                 .then(data => {
                     console.log(this.$route.params.id)
-                    console.log(data.data);
-                    this.formData = data.data;
+                    console.log(data);
+                    this.formData = data;
             })
             .catch(error => {
                 console.error('Error fetching data:', error);
